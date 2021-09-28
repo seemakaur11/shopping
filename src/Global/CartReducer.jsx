@@ -19,7 +19,7 @@ export default function CartReducer(state, action) {
         return { shoppingCart: [product, ...shoppingCart], totalPrice: updatedPrice, qty: updatedQty }
 
       }
-      break;
+      // break;
     case 'INC':
       product = action.cart;
       product.qty = product.qty + 1;
@@ -28,7 +28,7 @@ export default function CartReducer(state, action) {
       index = shoppingCart.findIndex(cart => cart.id === action.id);
       shoppingCart[index] = product;
       return { shoppingCart: [...shoppingCart], totalPrice: updatedPrice, qty: updatedQty }
-      break;
+      // break;
 
     case 'DEC':
       product = action.cart;
@@ -43,7 +43,7 @@ export default function CartReducer(state, action) {
       else {
         return state;
       }
-      break;
+      // break;
       case 'DELETE':
         const filtered = shoppingCart.filter(product => product.id !== action.id);
         product = action.cart;

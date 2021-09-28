@@ -20,7 +20,7 @@ export default function (props) {
                     {position: toast.POSITION.TOP_RIGHT})
                 }
                 else {
-                    toast.success('Your payment failed',
+                    toast.error('Your payment failed',
                     {position: toast.POSITION.TOP_RIGHT})
                 }
               })
