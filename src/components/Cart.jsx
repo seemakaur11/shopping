@@ -5,7 +5,7 @@ import axios from 'axios';
 import {toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 toast.configure();
-export default function (props) {
+const Cart = (props) => {
     const { shoppingCart, totalPrice, qty, dispatch } = useContext(CartContext);
     const handleToken = async(token)=>{
         const product = {name: 'All products', price: totalPrice}
@@ -74,3 +74,4 @@ export default function (props) {
         </div>
     )
 }
+export default Cart
