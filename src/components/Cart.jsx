@@ -33,7 +33,7 @@ const Cart = (props) => {
                shoppingCart.map(cart =>(
                    
                    <div className="cart" key = {cart.id}>
-                       <span className="cart-image"><img src={cart.image} alt='image'/></span>
+                       <span className="cart-image"><img src={cart.image} alt="description"/></span>
                        <span className="cart-name">{cart.name}</span>
                        <span className="cart-price">${cart.price}.00</span>
                        <span className="increment" onClick={()=>

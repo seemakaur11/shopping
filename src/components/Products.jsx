@@ -12,7 +12,7 @@ export default function Products(props) {
             <div className="products">
                 {products.map((product) =>(
                     <div className="product" key={product.id}>
-                        <div className="productImage"><img src={product.image} alt='image'/>
+                        <div className="productImage"><img src={product.image} alt='my-img'/>
                         </div>
                         <div className="product-details">
                             <div className="product-name">{product.name}</div>
