@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { CartContext } from '../Global/CartContext';
 import StripeCheckout from 'react-stripe-checkout';
 import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
+import {toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 toast.configure();
 export default function (props) {
@@ -13,7 +13,7 @@ export default function (props) {
             product, token })
             .then(res => {
                 const { status } = res.data
-                if(status === "success"){
+                if(status === "error"){
                     dispatch({type: 'EMPTY'})
                     props.history.push('/')
                     toast.success('You have paid successfully now you can continue your shopping',

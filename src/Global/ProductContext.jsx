@@ -12,7 +12,7 @@ const productContext = createContext();
 
 
 export default function ProductContext() {
-    const [products, setProducts] = useState([
+    const [products] = useState([
         {id: 1, name: 'Watch', price: 550, image: watch, status: 'hot'},
         {id: 2, name: 'Necklase', price: 2000, image: necklase, status: 'new'},
         {id: 3, name: 'Perfume', price: 245, image: perfume, status: 'hot'},

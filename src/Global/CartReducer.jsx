@@ -50,7 +50,7 @@ export default function CartReducer(state, action) {
         updatedQty = qty - 1;
         updatedPrice = totalPrice - product.price *product.qty;
         return { shoppingCart: [...filtered], totalPrice: updatedPrice, qty: updatedQty };
-        break;
+        // break;
         case 'EMPTY':
           return {shoppingCart: [], totalPrice: 0,
           qty: 0}
